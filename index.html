@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de privacidad · NetDashboard</title>
+<meta name="description" content="Aviso de privacidad de la app NetDashboard para Android: todo el análisis de red se hace y se guarda solo en tu teléfono.">
+<style>
+  :root { --bg:#F4F6F8; --card:#FFFFFF; --text:#17202A; --muted:#566472; --border:#D5DCE3; --accent:#0B7D72; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0E1318; --card:#171E26; --text:#E7EDF3; --muted:#9AA8B6; --border:#2C3742; --accent:#2FC4B2; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { font-size: 28px; line-height:1.25; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .summary { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+             border-radius: 10px; padding: 14px 18px; margin: 0 0 28px; }
+  .summary p { margin: 0; }
+  h2 { font-size: 19px; margin: 30px 0 8px; }
+  ul { padding-left: 22px; } li { margin: 4px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); padding-top: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Aviso de privacidad de NetDashboard</h1>
+  <p class="meta">Aplicación para Android · Última actualización: 2 de noviembre de 2026</p>
+</header>
+
+<div class="summary">
+  <p><strong>En resumen:</strong> NetDashboard analiza el tráfico de red de tu propio teléfono y guarda los resultados
+  <strong>solo en tu teléfono</strong>. La app no envía tus datos a ningún servidor, no tiene publicidad ni herramientas
+  de analítica, y el desarrollador no recibe ninguna información sobre ti ni sobre tu tráfico.</p>
+</div>
+
+<h2>1. Responsable</h2>
+<p>Shihang Zhao (desarrollador "Shihang"), con domicilio en Toluca, Estado de México, México.
+Contacto: <a href="mailto:zhao.devapp@gmail.com">zhao.devapp@gmail.com</a>.</p>
+<p>Este aviso se emite conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+
+<h2>2. Qué hace la app</h2>
+<p>NetDashboard es una herramienta de monitoreo y seguridad de red. Para ver el tráfico de tu teléfono crea una
+<strong>VPN local</strong> mediante el servicio VpnService de Android. Esa VPN funciona dentro del propio teléfono:
+el tráfico <strong>no se redirige a servidores del desarrollador ni de terceros</strong>; sale a internet por tu conexión
+normal (Wi-Fi o datos móviles). La app solo observa el tráfico mientras tú inicias una medición, y se detiene cuando
+la detienes o termina su temporizador.</p>
+
+<h2>3. Datos que se procesan en tu teléfono</h2>
+<p>Durante una medición la app registra, únicamente en el almacenamiento interno del teléfono:</p>
+<ul>
+  <li><strong>Metadatos de las conexiones:</strong> dirección IP y puerto de destino, protocolo (por ejemplo HTTPS, QUIC, DNS),
+      cantidad de bytes enviados y recibidos, hora de inicio y duración.</li>
+  <li><strong>Consultas DNS:</strong> los nombres de dominio que consultan las apps del teléfono y las direcciones IP de respuesta.</li>
+  <li><strong>Información de la red:</strong> tipo de conexión, IP local, máscara, puerta de enlace y servidores DNS.</li>
+  <li><strong>Alertas del detector de intrusos (IDS)</strong> y la velocidad de bajada y subida cada segundo.</li>
+  <li><strong>Datos que tú escribes:</strong> nombre y descripción de cada medición, y tus preferencias (tema, temporizadores).</li>
+</ul>
+<p>La app <strong>no guarda el contenido</strong> de tus comunicaciones (mensajes, páginas, contraseñas ni archivos).
+Tampoco accede a tus contactos, fotos, ubicación, micrófono ni cámara.</p>
+<p>Esta información puede revelar qué servicios usas y cuándo. Por eso se mantiene bajo tu control, en tu teléfono.</p>
+
+<h2>4. Para qué se usan</h2>
+<p>Exclusivamente para mostrarte en la app las gráficas, conexiones, alertas y comparaciones de tus mediciones, y para
+generar los reportes PDF que tú decidas exportar. No se usan para publicidad, perfiles ni ningún otro fin.</p>
+
+<h2>5. Transferencias y terceros</h2>
+<ul>
+  <li>La app <strong>no comparte ni transfiere</strong> tus datos a nadie: no tiene servidores propios, publicidad,
+      analítica ni reportes automáticos de errores.</li>
+  <li>La lista de dominios maliciosos que usa el IDS viene incluida dentro de la app; la detección se hace en el teléfono,
+      sin consultar servicios externos.</li>
+  <li>Los datos se excluyen de las copias de seguridad en la nube y de la transferencia a otro teléfono.</li>
+  <li>Si exportas un reporte PDF, se guarda donde tú elijas (por ejemplo, Descargas). Compartirlo después es decisión tuya.</li>
+  <li>Google Play y el sistema Android pueden tratar datos propios de su servicio (por ejemplo, al instalar la app),
+      conforme a sus propias políticas de privacidad.</li>
+</ul>
+
+<h2>6. Conservación y borrado</h2>
+<p>Los datos se conservan en tu teléfono hasta que tú los borres. Puedes borrarlos en cualquier momento desde la pestaña
+<em>Mediciones</em> (una medición o "Borrar todas"), o eliminar todo desinstalando la app. Una medición que no guardas
+se reemplaza cuando inicias la siguiente.</p>
+
+<h2>7. Tus derechos (ARCO) y revocación del consentimiento</h2>
+<p>Como el desarrollador no recibe ni almacena tus datos, tú puedes ejercer directamente en la app el acceso (consultar
+tus mediciones), la rectificación (editar nombres y descripciones), la cancelación (borrarlas) y la oposición (no iniciar
+mediciones). Puedes revocar tu consentimiento en cualquier momento quitando el permiso de VPN en
+<em>Ajustes de Android → Conexiones → VPN</em> o desinstalando la app.</p>
+<p>Para cualquier duda o solicitud relacionada con este aviso, escribe a
+<a href="mailto:zhao.devapp@gmail.com">zhao.devapp@gmail.com</a>. Se responderá en un plazo máximo de 20 días hábiles.</p>
+
+<h2>8. Seguridad</h2>
+<p>Los datos se guardan en el almacenamiento privado de la app, al que otras apps no tienen acceso, y nunca se transmiten
+por la red. La captura solo funciona mientras aparece la notificación "Captura activa", que puedes detener en cualquier momento.</p>
+
+<h2>9. Menores de edad</h2>
+<p>NetDashboard es una herramienta técnica dirigida a personas adultas y estudiantes de redes. No está dirigida a niñas ni niños.</p>
+
+<h2>10. Cambios a este aviso</h2>
+<p>Cualquier cambio se publicará en esta misma página con una nueva fecha de actualización. Si un cambio afecta la forma
+en que se tratan los datos, la app te pedirá aceptar de nuevo la divulgación al abrirla.</p>
+
+<footer>NetDashboard · Proyecto Integral de Comunicación de Datos · Facultad de Ingeniería, UAEMéx</footer>
+</main>
+</body>
+</html>
